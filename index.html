@@ -729,6 +729,15 @@
     .topbar .wrap{justify-content:center;text-align:center;}
   }
   @media (max-width: 760px){
+    .topbar-links:last-child{display:none;}
+    .topbar-links a:nth-child(2){display:none;}
+    .topbar .wrap{padding-top:6px;padding-bottom:6px;}
+    header.site .wrap{flex-wrap:nowrap;gap:8px;}
+    .brand{min-width:0;flex-shrink:1;gap:9px;}
+    .brand-mark{width:38px;height:38px;box-shadow:0 0 0 1.5px rgba(246,182,0,.35);}
+    .brand-text{min-width:0;overflow:hidden;}
+    .brand-text .name{font-size:.82rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+    .brand-text .sub{font-size:.54rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
     nav.main-links{
       position:absolute;
       top:100%;left:0;right:0;
@@ -741,9 +750,10 @@
     }
     nav.main-links a{padding:10px 0;border-bottom:1px solid rgba(255,255,255,.08);}
     #navToggle:checked + label + nav.main-links{display:flex;}
-    .nav-toggle-label{display:flex;}
-    .header-actions .btn-ghost{display:none;}
+    .nav-toggle-label{display:flex;flex-shrink:0;}
+    .header-actions{display:none;}
     .svc-grid{grid-template-columns:1fr;}
+    .hero{padding:44px 0 36px;}
     .hero-ctas .btn{flex:1 1 auto;justify-content:center;}
     .whats-float span.txt{display:none;}
     .whats-float{padding:14px;}
